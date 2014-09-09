@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WIN32 Main">
+      <UniqueIdentifier>{953b7d4a-e4ac-4f99-8978-04b3d043e3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{8ca92692-5f17-47b2-8343-0564b64c9a56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Data.hpp">
+      <Filter>WIN32 Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\LightingAndGraphics.hpp">
+      <Filter>WIN32 Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\LightingAndGraphics.cpp">
+      <Filter>WIN32 Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\WIN32_Main.cpp">
+      <Filter>WIN32 Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

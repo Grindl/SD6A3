@@ -1,0 +1,46 @@
+﻿Build started 5/14/2014 9:24:21 PM.
+     1>Project "D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Demo Driver\Demo Driver\Demo Driver.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Demo Driver.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Code" /Zi /nologo /W4 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Code\LightingAndGraphics.cpp Code\WIN32_Main.cpp
+         LightingAndGraphics.cpp
+     1>d:\documents\visual studio projects\softdev post 2\enginecore\demo driver\demo driver\code\LightingAndGraphics.hpp(38): warning C4100: 'eventType' : unreferenced formal parameter
+     1>Code\LightingAndGraphics.cpp(318): warning C4018: '<' : signed/unsigned mismatch
+     1>Code\LightingAndGraphics.cpp(362): warning C4100: 'scanCode' : unreferenced formal parameter
+     1>Code\LightingAndGraphics.cpp(362): warning C4100: 'asKey' : unreferenced formal parameter
+         WIN32_Main.cpp
+     1>d:\documents\visual studio projects\softdev post 2\enginecore\demo driver\demo driver\code\LightingAndGraphics.hpp(38): warning C4100: 'eventType' : unreferenced formal parameter
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Release\Demo Driver.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Demo Driver.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Release\Demo Driver.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Release\Demo Driver.lib" /MACHINE:X86 Release\LightingAndGraphics.obj
+         Release\WIN32_Main.obj
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall DebugPoint::genVBO(void)" (?genVBO@DebugPoint@@QAEXXZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: bool __thiscall Console::executeCommand(void)" (?executeCommand@Console@@QAE_NXZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall Console::insertCharacterIntoCommand(unsigned char)" (?insertCharacterIntoCommand@Console@@QAEXE@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall Console::render(void)" (?render@Console@@QAEXXZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall Console::Console(void)" (??0Console@@QAE@XZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall FrameBuffer::postRenderStep(void)" (?postRenderStep@FrameBuffer@@QAEXXZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall FrameBuffer::preRenderStep(void)" (?preRenderStep@FrameBuffer@@QAEXXZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: static class Texture * __cdecl Texture::CreateOrGetTexture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?CreateOrGetTexture@Texture@@SAPAV1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall Texture::Texture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Texture@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "void (__stdcall* glUseProgram)(unsigned int)" (?glUseProgram@@3P6GXI@ZA)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "void (__stdcall* glActiveTexture)(unsigned int)" (?glActiveTexture@@3P6GXI@ZA)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: bool __thiscall IOHandler::KeyUpEvent(unsigned char)" (?KeyUpEvent@IOHandler@@QAE_NE@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: bool __thiscall IOHandler::KeyDownEvent(unsigned char)" (?KeyDownEvent@IOHandler@@QAE_NE@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall IOHandler::IOHandler(void)" (??0IOHandler@@QAE@XZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall ConsoleLog::appendLine(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?appendLine@ConsoleLog@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall ConsoleLog::ConsoleLog(void)" (??0ConsoleLog@@QAE@XZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall Light::Light(enum LIGHT_TYPE)" (??0Light@@QAE@W4LIGHT_TYPE@@@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall Vector2i::Vector2i(int,int)" (??0Vector2i@@QAE@HH@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: void __thiscall LightManager::updateLightsInOpenGL(unsigned int)" (?updateLightsInOpenGL@LightManager@@QAEXI@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall Renderer::Renderer(void)" (??0Renderer@@QAE@XZ)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: __thiscall DebugAABB3::DebugAABB3(class Vector3f,class Color4f,class Vector3f,class Color4f,float,bool)" (??0DebugAABB3@@QAE@VVector3f@@VColor4f@@01M_N@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "public: static class DebugMultiPoly * __cdecl MaxImporter::ImportFrom3DSMaxToDebugMultiPoly(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?ImportFrom3DSMaxToDebugMultiPoly@MaxImporter@@SAPAVDebugMultiPoly@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>LightingAndGraphics.obj : error LNK2001: unresolved external symbol "void __cdecl UnitTestXMLParser(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?UnitTestXMLParser@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>WIN32_Main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl CommandParser::RegisterCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool (__cdecl*)(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >))" (?RegisterCommand@CommandParser@@SAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@P6A_N0@Z@Z)
+     1>D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Release\Demo Driver.exe : fatal error LNK1120: 24 unresolved externals
+     1>Done Building Project "D:\Documents\Visual Studio Projects\SoftDev Post 2\EngineCore\Demo Driver\Demo Driver\Demo Driver.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.97
